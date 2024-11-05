@@ -1,0 +1,108 @@
+body {
+    background-color: #121212; /* Fundo preto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Texto branco para contraste */
+}
+
+.header {
+    background-color: #ff6f20; /* Laranja vibrante */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamanho aumentado para melhor visibilidade */
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave para hover */
+}
+
+.header nav a:hover {
+    color: #ffb703; /* Amarelo ao passar o mouse */
+}
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background-color: #1f1f1f; /* Fundo cinza escuro para os produtos */
+    border: 1px solid #ff6f20; /* Borda laranja */
+    border-radius: 10px;
+    width: 280px; /* Largura aumentada para melhor visualização */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative; /* Para posicionar o botão */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para hover */
+}
+
+.produto:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao hover */
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto h2 {
+    color: #ff6f20; /* Laranja vibrante */
+    font-size: 1.5em; /* Tamanho aumentado para melhor visibilidade */
+}
+
+.produto p {
+    color: #ffffff; /* Texto branco */
+    font-size: 1.2em; /* Tamanho aumentado para melhor legibilidade */
+    margin: 10px 0 0; /* Espaçamento acima do preço */
+}
+
+.botao {
+    opacity: 0; /* Inicialmente invisível */
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6f20; /* Botão laranja vibrante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s; /* Transição suave para hover e opacidade */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+}
+
+.produto:hover .botao {
+    opacity: 1; /* Exibe o botão ao passar o mouse */
+}
+
+.botao:hover {
+    background-color: #ffb703; /* Amarelo ao passar o mouse sobre o botão */
+}

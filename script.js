@@ -8,7 +8,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const savedPassword = localStorage.getItem("password");
 
     if (email === savedEmail && password === savedPassword) {
-        alert(`Welcome back, ${email}!`);
         window.location.href = "api.html"
     } else {
         alert("Invalid email or password. Please try again.");

@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="left-panel">
-            <img src="max.jpg" alt="">
-             
-            <div class="abstract-bg"></div>
-        </div>
-        <div class="right-panel">
-            <div class="login-form">
-                <h1>Olá, <span>Bem vindo a ProMax!</span></h1>
-                <form id="loginForm">
-                    <input type="email" id="email" placeholder="Email address" required>
-                    <input type="password" id="password" placeholder="Password" required>
-                    <button type="submit" class="btn login">Login</button>
-                    <button type="button" class="btn signup" id="signUpBtn">Sign up</button>
-                </form>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
+<header class="header">
+    <h1>Produtos</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="sobre-nos.html">Sobre nós</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="catalogo">
+    <div class="produto">
+        <h2>Barra de Whey</h2>
+        <img src="barrinha-de-whey.jpg" alt="Barra de Whey">
+        <p>Preço: R$10,00</p>
+        <button class="botao">Adicionar ao Carrinho</button>
     </div>
-    <script src="script.js"></script>
+    
+    <div class="produto">
+        <h2>Whey</h2>
+        <img src="whey-de-qualidade.jpg" alt="Whey">
+        <p>Preço: R$50,00</p>
+        <button class="botao">Adicionar ao Carrinho</button>
+    </div>
+    
+    <div class="produto">
+        <h2>Creatina</h2>
+        <img src="image1_0.jpg" alt="Creatina">
+        <p>Preço: R$85,00</p>
+        <button class="botao">Adicionar ao Carrinho</button>
+    </div>
+</section>
 </body>
 </html>
